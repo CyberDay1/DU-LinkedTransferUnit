@@ -1,0 +1,84 @@
+{
+ "date": "2026-10-10",
+ "round": "v2 (DU industry language)",
+ "limit_m": [
+  2.11,
+  1.97,
+  2.56
+ ],
+ "orphans": [],
+ "concepts": {
+  "D": {
+   "tris": 3452,
+   "floating": 0,
+   "floating_items": [],
+   "islands": 45,
+   "coplanar_cross_visible_cm2": 0.0,
+   "coplanar_same_zone_cm2": 339.6,
+   "inverted_islands": [
+    0,
+    45
+   ],
+   "bbox_m": [
+    2.04,
+    1.95,
+    2.437
+   ],
+   "min_z": 0.0,
+   "ok": true
+  },
+  "E": {
+   "tris": 4392,
+   "floating": 0,
+   "floating_items": [],
+   "islands": 63,
+   "coplanar_cross_visible_cm2": 0.0,
+   "coplanar_same_zone_cm2": 15.3,
+   "inverted_islands": [
+    0,
+    63
+   ],
+   "bbox_m": [
+    2.008,
+    1.9,
+    2.54
+   ],
+   "min_z": 0.0,
+   "ok": true
+  },
+  "F": {
+   "tris": 4164,
+   "floating": 0,
+   "floating_items": [],
+   "islands": 45,
+   "coplanar_cross_visible_cm2": 0.0,
+   "coplanar_same_zone_cm2": 0.0,
+   "inverted_islands": [
+    0,
+    45
+   ],
+   "bbox_m": [
+    2.02,
+    1.9,
+    2.52
+   ],
+   "min_z": 0.0,
+   "ok": true
+  }
+ },
+ "ok": true,
+ "render_device": "OPTIX",
+ "renders": [
+  "C:\\Users\\conno\\Documents\\DU-Mods\\LinkedTransferUnit\\art\\renders\\v2_front34_D.png",
+  "C:\\Users\\conno\\Documents\\DU-Mods\\LinkedTransferUnit\\art\\renders\\v2_side_D.png",
+  "C:\\Users\\conno\\Documents\\DU-Mods\\LinkedTransferUnit\\art\\renders\\v2_back34_D.png",
+  "C:\\Users\\conno\\Documents\\DU-Mods\\LinkedTransferUnit\\art\\renders\\v2_front34_E.png",
+  "C:\\Users\\conno\\Documents\\DU-Mods\\LinkedTransferUnit\\art\\renders\\v2_side_E.png",
+  "C:\\Users\\conno\\Documents\\DU-Mods\\LinkedTransferUnit\\art\\renders\\v2_back34_E.png",
+  "C:\\Users\\conno\\Documents\\DU-Mods\\LinkedTransferUnit\\art\\renders\\v2_front34_F.png",
+  "C:\\Users\\conno\\Documents\\DU-Mods\\LinkedTransferUnit\\art\\renders\\v2_side_F.png",
+  "C:\\Users\\conno\\Documents\\DU-Mods\\LinkedTransferUnit\\art\\renders\\v2_back34_F.png",
+  "C:\\Users\\conno\\Documents\\DU-Mods\\LinkedTransferUnit\\art\\renders\\v2_lineup.png"
+ ],
+ "seconds": 23.8
+}

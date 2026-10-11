@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!--
+    Embedded DLL mod for a myDU server. The output DLL name must start with "Mod".
+    NQ assemblies are referenced from $(NQLibDir); copy them from the mod toolkit's
+    ModAdmin folder (see README). They are never copied to the output: the Orleans
+    host already loads them.
+  -->
+  <PropertyGroup>
+    <Nullable>annotations</Nullable>
+    <AssemblyName>ModLinkedTransferUnit</AssemblyName>
+    <RootNamespace>LinkedTransferUnit</RootNamespace>
+    <NQLibDir Condition="'$(NQLibDir)' == ''">$(MSBuildThisFileDirectory)lib\</NQLibDir>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="src\**\*.cs" />
+    <EmbeddedResource Include="src\client\ltu_panel.js" LogicalName="LinkedTransferUnit.ltu_panel.js" />
+    <EmbeddedResource Include="src\IconIndex.json" LogicalName="LinkedTransferUnit.IconIndex.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="NQutils"><HintPath>$(NQLibDir)NQutils.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Backend"><HintPath>$(NQLibDir)Backend.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Backend.PubSub"><HintPath>$(NQLibDir)Backend.PubSub.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Interfaces"><HintPath>$(NQLibDir)Interfaces.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Router.Orleans"><HintPath>$(NQLibDir)Router.Orleans.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Orleans.Core" Version="3.6.5" ExcludeAssets="runtime" />
+    <PackageReference Include="Microsoft.Orleans.Core.Abstractions" Version="3.6.5" ExcludeAssets="runtime" />
+    <PackageReference Include="Google.Protobuf" Version="3.21.9" ExcludeAssets="runtime" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" ExcludeAssets="runtime" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" ExcludeAssets="runtime" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.0" ExcludeAssets="runtime" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" ExcludeAssets="runtime" />
+  </ItemGroup>
+
+  <!-- https://github.com/dotnet/efcore/issues/15047 (same workaround as the toolkit samples) -->
+  <Target Name="AddAssemblyAliasToReactiveAsync" AfterTargets="ResolveAssemblyReferences">
+    <ItemGroup>
+      <ReferencePath Condition=" '%(FileName)' == 'System.Interactive.Async' ">
+        <Aliases>reactive</Aliases>
+      </ReferencePath>
+    </ItemGroup>
+  </Target>
+</Project>

@@ -1,0 +1,9 @@
+{
+  "elements": {
+    "LinkedTransferUnit": {
+      "inherit": "TransferUnit",
+      "node": "resources_generated/ltu_kit_v1.node",
+      "icon": "resources_generated/elements/industries/industry-transfer-unit_001/icons/env_industry-transfer-unit_001_icon.png"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+ "date": "2026-10-10",
+ "round": "v3 (stock TU as base, no ProcKit modelling)",
+ "limit_m": [
+  2.11,
+  1.97,
+  2.56
+ ],
+ "orphans": [],
+ "stock_lookalike": {
+  "tris": 7944,
+  "floating": 0,
+  "floating_items": [],
+  "coplanar_cross_visible_cm2": 0.0,
+  "inverted_islands": [
+   0,
+   48
+  ],
+  "bbox_m": [
+   2.1,
+   1.96,
+   2.555
+  ],
+  "min_z": 0.0,
+  "ok": true
+ },
+ "ltu": {
+  "tris": 14040,
+  "floating": 0,
+  "floating_items": [],
+  "coplanar_cross_visible_cm2": 0.0,
+  "inverted_islands": [
+   0,
+   101
+  ],
+  "bbox_m": [
+   2.1,
+   1.96,
+   2.555
+  ],
+  "min_z": 0.0,
+  "ok": true
+ },
+ "ok": true,
+ "render_device": "OPTIX",
+ "renders": [
+  "C:\\Users\\conno\\Documents\\DU-Mods\\LinkedTransferUnit\\art\\renders\\v3_compare_stock_vs_ltu.png",
+  "C:\\Users\\conno\\Documents\\DU-Mods\\LinkedTransferUnit\\art\\renders\\v3_ltu_icon34.png",
+  "C:\\Users\\conno\\Documents\\DU-Mods\\LinkedTransferUnit\\art\\renders\\v3_ltu_side.png",
+  "C:\\Users\\conno\\Documents\\DU-Mods\\LinkedTransferUnit\\art\\renders\\v3_ltu_back34.png"
+ ],
+ "seconds": 23.2
+}

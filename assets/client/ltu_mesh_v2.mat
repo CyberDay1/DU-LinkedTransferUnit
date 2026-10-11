@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<materials version="2.3">
+	<material name="ltu_mesh_white" parent="env_core-round-side-industry_001_01">
+		<parameter name="albedo_color">1 1 1 1</parameter>
+	</material>
+	<material name="ltu_mesh_grey" parent="env_core-round-side-industry_001_01">
+		<parameter name="albedo_color">1 1 1 1</parameter>
+	</material>
+	<material name="ltu_mesh_chassis" parent="env_core-round-side-industry_001_01">
+		<parameter name="albedo_color">1 1 1 1</parameter>
+	</material>
+	<material name="ltu_mesh_gunmetal" parent="env_core-round-side-industry_001_01">
+		<parameter name="albedo_color">0.62 0.64 0.68 1</parameter>
+	</material>
+	<material name="ltu_mesh_steel" parent="env_core-round-side-industry_001_01">
+		<parameter name="albedo_color">0.9 0.92 0.95 1</parameter>
+	</material>
+	<material name="ltu_mesh_orange" parent="env_core-round-side-industry_001_01">
+		<parameter name="albedo_color">1 1 1 1</parameter>
+	</material>
+	<material name="ltu_mesh_redtag" parent="env_core-round-side-industry_001_01">
+		<parameter name="albedo_color">1 0.45 0.45 1</parameter>
+	</material>
+	<material name="ltu_mesh_status" parent="env_core-round-side-industry_001_01">
+		<parameter name="albedo_color">0.35 0.6 1 1</parameter>
+	</material>
+</materials>

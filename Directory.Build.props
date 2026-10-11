@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <GenerateFullPaths>true</GenerateFullPaths>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <NoWarn>IDE1006;IDE0037;CS1998</NoWarn>
+  </PropertyGroup>
+</Project>

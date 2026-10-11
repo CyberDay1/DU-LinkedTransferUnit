@@ -1,0 +1,166 @@
+{
+ "date": "2026-10-10",
+ "stock_tu_bbox_m": [
+  2.111,
+  1.97,
+  2.557
+ ],
+ "orphans": [],
+ "concepts": {
+  "A": {
+   "parts": {
+    "LTU_A_Body": {
+     "tris": 684,
+     "floating": 0,
+     "islands": 17,
+     "coplanar_cross_visible_cm2": 0.0,
+     "coplanar_same_zone_cm2": 0.0,
+     "inverted_islands": [
+      0,
+      17
+     ]
+    },
+    "LTU_A_Ring1": {
+     "tris": 384,
+     "floating": 0,
+     "islands": 2,
+     "coplanar_cross_visible_cm2": 0.0,
+     "coplanar_same_zone_cm2": 0.0,
+     "inverted_islands": [
+      0,
+      2
+     ],
+     "gap_to_others_mm": 75.0
+    },
+    "LTU_A_Ring2": {
+     "tris": 384,
+     "floating": 0,
+     "islands": 2,
+     "coplanar_cross_visible_cm2": 0.0,
+     "coplanar_same_zone_cm2": 0.0,
+     "inverted_islands": [
+      0,
+      2
+     ],
+     "gap_to_others_mm": 176.4
+    }
+   },
+   "ok": true,
+   "bbox_m": [
+    1.9,
+    1.9,
+    2.24
+   ],
+   "min_z": 0.0,
+   "tris_total": 1452
+  },
+  "B": {
+   "parts": {
+    "LTU_B_Body": {
+     "tris": 780,
+     "floating": 0,
+     "islands": 15,
+     "coplanar_cross_visible_cm2": 0.0,
+     "coplanar_same_zone_cm2": 0.0,
+     "inverted_islands": [
+      0,
+      15
+     ]
+    }
+   },
+   "ok": true,
+   "bbox_m": [
+    1.9,
+    1.9,
+    2.38
+   ],
+   "min_z": 0.0,
+   "tris_total": 780
+  },
+  "C": {
+   "parts": {
+    "LTU_C_Body": {
+     "tris": 612,
+     "floating": 0,
+     "islands": 4,
+     "coplanar_cross_visible_cm2": 0.0,
+     "coplanar_same_zone_cm2": 0.0,
+     "inverted_islands": [
+      0,
+      4
+     ]
+    },
+    "LTU_C_Core": {
+     "tris": 240,
+     "floating": 0,
+     "islands": 1,
+     "coplanar_cross_visible_cm2": 0.0,
+     "coplanar_same_zone_cm2": 0.0,
+     "inverted_islands": [
+      0,
+      1
+     ],
+     "gap_to_others_mm": 192.4
+    },
+    "LTU_C_Pod1": {
+     "tris": 96,
+     "floating": 0,
+     "islands": 1,
+     "coplanar_cross_visible_cm2": 0.0,
+     "coplanar_same_zone_cm2": 0.0,
+     "inverted_islands": [
+      0,
+      1
+     ],
+     "gap_to_others_mm": 203.1
+    },
+    "LTU_C_Pod2": {
+     "tris": 96,
+     "floating": 0,
+     "islands": 1,
+     "coplanar_cross_visible_cm2": 0.0,
+     "coplanar_same_zone_cm2": 0.0,
+     "inverted_islands": [
+      0,
+      1
+     ],
+     "gap_to_others_mm": 200.0
+    },
+    "LTU_C_Pod3": {
+     "tris": 96,
+     "floating": 0,
+     "islands": 1,
+     "coplanar_cross_visible_cm2": 0.0,
+     "coplanar_same_zone_cm2": 0.0,
+     "inverted_islands": [
+      0,
+      1
+     ],
+     "gap_to_others_mm": 192.4
+    }
+   },
+   "ok": true,
+   "bbox_m": [
+    1.9,
+    1.9,
+    1.98
+   ],
+   "min_z": 0.0,
+   "tris_total": 1140
+  }
+ },
+ "ok": true,
+ "renders": [
+  "C:\\Users\\conno\\Documents\\DU-Mods\\LinkedTransferUnit\\art\\renders\\ltu_lineup.png",
+  "C:\\Users\\conno\\Documents\\DU-Mods\\LinkedTransferUnit\\art\\renders\\ltu_front34_A_34.png",
+  "C:\\Users\\conno\\Documents\\DU-Mods\\LinkedTransferUnit\\art\\renders\\ltu_side_A_34.png",
+  "C:\\Users\\conno\\Documents\\DU-Mods\\LinkedTransferUnit\\art\\renders\\ltu_high_A_34.png",
+  "C:\\Users\\conno\\Documents\\DU-Mods\\LinkedTransferUnit\\art\\renders\\ltu_front34_B_34.png",
+  "C:\\Users\\conno\\Documents\\DU-Mods\\LinkedTransferUnit\\art\\renders\\ltu_side_B_34.png",
+  "C:\\Users\\conno\\Documents\\DU-Mods\\LinkedTransferUnit\\art\\renders\\ltu_high_B_34.png",
+  "C:\\Users\\conno\\Documents\\DU-Mods\\LinkedTransferUnit\\art\\renders\\ltu_front34_C_34.png",
+  "C:\\Users\\conno\\Documents\\DU-Mods\\LinkedTransferUnit\\art\\renders\\ltu_side_C_34.png",
+  "C:\\Users\\conno\\Documents\\DU-Mods\\LinkedTransferUnit\\art\\renders\\ltu_high_C_34.png"
+ ],
+ "seconds": 3.3
+}

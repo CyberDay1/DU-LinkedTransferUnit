@@ -1,0 +1,108 @@
+{
+  "name": "ltu_baked_v1",
+  "surfaces": [
+    {
+      "name": "ltu_baked_lod0",
+      "material": "ltu_baked_body",
+      "max": 50,
+      "min": null
+    },
+    {
+      "name": "ltu_baked_lod1",
+      "material": "ltu_baked_body",
+      "max": null,
+      "min": 50
+    }
+  ],
+  "col_surface": "ltu_baked_v1_col",
+  "skinned": true,
+  "anim": {
+    "file": "ltu_baked_v1_pump.anim",
+    "name": "running",
+    "loop": true
+  },
+  "parent_material": "env_core-round-side-industry_001_01",
+  "report": {
+    "lod0_tris": 3048,
+    "lod1_tris": 645,
+    "low_tris": {
+      "LTU_Body": 1699,
+      "LTU_Frame": 449,
+      "LTU_CanA": 450,
+      "LTU_CanB": 450
+    },
+    "lod1_part_tris": {
+      "LTU_Body": 361,
+      "LTU_Frame": 95,
+      "LTU_CanA": 94,
+      "LTU_CanB": 95
+    },
+    "bounds": [
+      -1.0483,
+      -0.978,
+      0.0048,
+      1.048,
+      0.9786,
+      2.5589,
+      -0.0001,
+      0.0003,
+      1.2819,
+      1.8768
+    ],
+    "bake": {
+      "res": 2048,
+      "extrusion": 0.015,
+      "max_ray": 0.045
+    },
+    "col_tris": 120,
+    "bytes": {
+      "ltu_baked_v1.mesh": 185537,
+      "ltu_baked_v1_col.mesh": 7392,
+      "ltu_baked_v1_pump.anim": 3880
+    },
+    "seconds": 224
+  },
+  "textures": {
+    "albedo": "c",
+    "normal": "n",
+    "shading": "mrao",
+    "emission": "e"
+  },
+  "post": {
+    "bake_res": 2048,
+    "tex_res": 1024,
+    "miss_pct": {
+      "LTU_Body": 0.003,
+      "LTU_Frame": 0.05,
+      "LTU_CanA": 0.001,
+      "LTU_CanB": 0.001
+    },
+    "atlas_fill_pct": 54.1,
+    "normal_curl_corr_blender": -0.104,
+    "normal_green_flipped": true,
+    "normal_curl_corr_out": 0.104,
+    "bytes": {
+      "baked": {
+        "total": 1050691,
+        "ltu_baked_v1_c.dds.nqz": 160825,
+        "ltu_baked_v1_n.dds.nqz": 444538,
+        "ltu_baked_v1_mrao.dds.nqz": 307907,
+        "ltu_baked_v1_e.dds.nqz": 7834,
+        "ltu_baked_v1.mesh.nqz": 124993,
+        "ltu_baked_v1_col.mesh.nqz": 3916,
+        "ltu_baked_v1_pump.anim.nqz": 678
+      },
+      "bakedraw": {
+        "total": 4391705,
+        "ltu_bakedraw_v1_c.dds": 699192,
+        "ltu_bakedraw_v1_n.dds": 1398256,
+        "ltu_bakedraw_v1_mrao.dds": 1398256,
+        "ltu_bakedraw_v1_e.dds": 699192,
+        "ltu_bakedraw_v1.mesh": 185537,
+        "ltu_bakedraw_v1_col.mesh": 7392,
+        "ltu_bakedraw_v1_pump.anim": 3880
+      }
+    },
+    "normal_curl_corr_dds": 0.115
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "elements": {
+    "LinkedTransferUnit": {
+      "inherit": "TransferUnit",
+      "node": "resources_generated/ltu_baked_v1.node",
+      "icon": "resources_generated/elements/industries/industry-transfer-unit_001/icons/env_industry-transfer-unit_001_icon.png",
+      "animations": [
+        {
+          "animationPath": "resources_generated/ltu_baked_v1_pump.anim",
+          "loop": true,
+          "name": "running"
+        }
+      ],
+      "states": {
+        "idle": {
+          "start": [
+            {
+              "action": "material_params",
+              "name": "idle",
+              "params": [
+                {
+                  "arg": "20",
+                  "param": "emission_scale"
+                },
+                {
+                  "arg": "1.f,0.20f,0.20f,1.0f",
+                  "param": "emission_color"
+                }
+              ]
+            },
+            {
+              "action": "animation_stop_loop",
+              "name": "running"
+            }
+          ]
+        },
+        "damaged": {
+          "start": [
+            {
+              "action": "pkfx_start",
+              "name": "vfx_damaged",
+              "scoped": true
+            }
+          ]
+        },
+        "started": {
+          "start": [
+            {
+              "action": "sound_event",
+              "name": "Element_IndustryUnit_TransferUnit_Start"
+            }
+          ],
+          "stop": [
+            {
+              "action": "sound_event",
+              "name": "Element_IndustryUnit_TransferUnit_Stop"
+            }
+          ]
+        },
+        "running": {
+          "start": [
+            {
+              "action": "sound_event",
+              "name": "Element_IndustryUnit_TransferUnit_IsNormal"
+            },
+            {
+              "action": "pkfx_start",
+              "name": "vfx_start",
+              "scoped": true
+            },
+            {
+              "action": "material_params",
+              "name": "running",
+              "params": [
+                {
+                  "arg": "(sin(time*2)*0.5+0.5)*19+1",
+                  "param": "emission_scale"
+                },
+                {
+                  "arg": "0.20f,1.f,0.20f,1.0f",
+                  "param": "emission_color"
+                }
+              ]
+            },
+            {
+              "action": "animation_play",
+              "name": "running",
+              "scoped": true
+            }
+          ]
+        },
+        "jammed": {
+          "start": [
+            {
+              "action": "sound_event",
+              "name": "Element_IndustryUnit_TransferUnit_IsJammed"
+            },
+            {
+              "action": "material_params",
+              "name": "jammed",
+              "params": [
+                {
+                  "arg": "(sin(time*6)*0.5+0.5)*19+1",
+                  "param": "emission_scale"
+                },
+                {
+                  "arg": "1.f,0.35f,0.20f,1.0f",
+                  "param": "emission_color"
+                }
+              ]
+            },
+            {
+              "action": "animation_pause",
+              "name": "running"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

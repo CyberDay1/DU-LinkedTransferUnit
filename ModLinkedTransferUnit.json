@@ -1,0 +1,65 @@
+{
+  // Linked Transfer Unit settings. Copy next to ModLinkedTransferUnit.dll in the server's Mods folder.
+  // Every key is optional; these are the defaults.
+
+  "ItemName": "LinkedTransferUnit",
+  "CreateItemIfMissing": true,
+  "ItemParent": "TransferUnit",
+  "ItemAssetAlias": "TransferUnit",
+  "ItemDisplayName": "Linked Transfer Unit",
+  "ItemDescription": "Moves items between containers within range, without links. Pair containers with Linked Transfer Unit > Pair source / Pair destination, or set name prefixes in Linked Transfer Unit > Configure, then press Start.",
+
+  // Client art: the mod sends its own element definition + files at login (NQ resource protocol).
+  // AssetVariant "kit" = stock meshes combined, "mesh" = the exported v3b mesh. Read at each login.
+  // ClientAssets false = stock transfer unit look (needs an orleans restart to restore the alias).
+  "ClientAssets": true,
+  "ClientAssetDir": "/OrleansGrains/Mods/LinkedTransferUnit/client",
+  "AssetVariant": "kit",
+  "ClientAssetMinResendSeconds": 20,
+
+  "RouteSeparator": ">",
+  "CaseInsensitive": true,
+  "AllowNameRoutes": true,
+  "MaxPrefixLength": 64,
+  "StorePath": "/OrleansGrains/Mods/LinkedTransferUnit/units.json",
+  "UnitConfigKeepHours": 168,
+
+  "MaxPairsPerRole": 16,
+  "PairingWindowSeconds": 60,
+  "PairRetrySeconds": 30,
+
+  "RequireRunning": true,
+  "HookStockStartStop": true,
+  "PatchIndustryStatus": true,
+  "ProbeStockPanel": true,
+  "InjectStockPanel": true,
+  "InjectDelaysSeconds": [3, 8, 15, 30, 60, 120],
+  "StockPanelMatchMeters": 12,
+
+  "MaxFilterEntries": 200,
+  "CatalogRoot": "BaseItem",
+  "CatalogExclude": ["DataItem", "Tool", "MissionPackageContentAphelia"],
+  "CatalogBrowseMax": 400,
+  "CatalogSearchMax": 120,
+
+  "MaxRangeMeters": 1000,
+  "CycleSeconds": 5,
+  "MaxLitresPerUnitPerCycle": 1000,
+  "MaxUnitsPerCycle": 200,
+  "RescanSeconds": 30,
+  "ContainerCacheSeconds": 15,
+
+  "FuelFillPercent": 100,
+  "RequireMatchingFuelType": true,
+  "FuelTypeFamilies": { "Atmospheric": "AtmoFuel", "Space": "SpaceFuel", "Rocket": "RocketFuel" },
+
+  "AllowOtherOwnersWithRights": true,
+  "SkipInstancedItems": true,
+
+  "JournalStaleSeconds": 120,
+  // DEBUG ONLY: lets an admin arm injected faults for the test harness. Keep false.
+  "FaultInjection": false,
+
+  "LogEveryMove": true,
+  "HeartbeatMinutes": 10
+}

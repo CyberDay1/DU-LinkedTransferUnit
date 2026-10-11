@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<materials version="2.3">
+	<material name="ltu_kit_body" parent="env_core-round-side-industry_001_01">
+		<parameter name="albedo_color">0.72 0.82 1 1</parameter>
+	</material>
+	<material name="ltu_kit_tank" parent="RadialAtmofuelTankXS">
+		<parameter name="albedo_color">1 0.62 0.32 1</parameter>
+	</material>
+</materials>

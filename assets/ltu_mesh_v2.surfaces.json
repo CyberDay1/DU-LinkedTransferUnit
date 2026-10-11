@@ -1,0 +1,448 @@
+{
+  "materials": [
+    {
+      "name": "ltu_mesh_white",
+      "parent": "env_core-round-side-industry_001_01",
+      "params": {
+        "albedo_color": "1 1 1 1"
+      }
+    },
+    {
+      "name": "ltu_mesh_grey",
+      "parent": "env_core-round-side-industry_001_01",
+      "params": {
+        "albedo_color": "1 1 1 1"
+      }
+    },
+    {
+      "name": "ltu_mesh_chassis",
+      "parent": "env_core-round-side-industry_001_01",
+      "params": {
+        "albedo_color": "1 1 1 1"
+      }
+    },
+    {
+      "name": "ltu_mesh_gunmetal",
+      "parent": "env_core-round-side-industry_001_01",
+      "params": {
+        "albedo_color": "0.62 0.64 0.68 1"
+      }
+    },
+    {
+      "name": "ltu_mesh_steel",
+      "parent": "env_core-round-side-industry_001_01",
+      "params": {
+        "albedo_color": "0.9 0.92 0.95 1"
+      }
+    },
+    {
+      "name": "ltu_mesh_orange",
+      "parent": "env_core-round-side-industry_001_01",
+      "params": {
+        "albedo_color": "1 1 1 1"
+      }
+    },
+    {
+      "name": "ltu_mesh_redtag",
+      "parent": "env_core-round-side-industry_001_01",
+      "params": {
+        "albedo_color": "1 0.45 0.45 1"
+      }
+    },
+    {
+      "name": "ltu_mesh_status",
+      "parent": "env_core-round-side-industry_001_01",
+      "params": {
+        "albedo_color": "0.35 0.6 1 1"
+      }
+    }
+  ],
+  "surfaces": [
+    {
+      "name": "ltu_chassis_lod0",
+      "material": "ltu_mesh_chassis",
+      "max": 50,
+      "min": null
+    },
+    {
+      "name": "ltu_grey_lod0",
+      "material": "ltu_mesh_grey",
+      "max": 50,
+      "min": null
+    },
+    {
+      "name": "ltu_gunmetal_lod0",
+      "material": "ltu_mesh_gunmetal",
+      "max": 50,
+      "min": null
+    },
+    {
+      "name": "ltu_orange_lod0",
+      "material": "ltu_mesh_orange",
+      "max": 50,
+      "min": null
+    },
+    {
+      "name": "ltu_redtag_lod0",
+      "material": "ltu_mesh_redtag",
+      "max": 50,
+      "min": null
+    },
+    {
+      "name": "ltu_status_lod0",
+      "material": "ltu_mesh_status",
+      "max": 50,
+      "min": null
+    },
+    {
+      "name": "ltu_steel_lod0",
+      "material": "ltu_mesh_steel",
+      "max": 50,
+      "min": null
+    },
+    {
+      "name": "ltu_white_lod0",
+      "material": "ltu_mesh_white",
+      "max": 50,
+      "min": null
+    },
+    {
+      "name": "ltu_chassis_lod1",
+      "material": "ltu_mesh_chassis",
+      "max": null,
+      "min": 50
+    },
+    {
+      "name": "ltu_grey_lod1",
+      "material": "ltu_mesh_grey",
+      "max": null,
+      "min": 50
+    },
+    {
+      "name": "ltu_gunmetal_lod1",
+      "material": "ltu_mesh_gunmetal",
+      "max": null,
+      "min": 50
+    },
+    {
+      "name": "ltu_orange_lod1",
+      "material": "ltu_mesh_orange",
+      "max": null,
+      "min": 50
+    },
+    {
+      "name": "ltu_redtag_lod1",
+      "material": "ltu_mesh_redtag",
+      "max": null,
+      "min": 50
+    },
+    {
+      "name": "ltu_status_lod1",
+      "material": "ltu_mesh_status",
+      "max": null,
+      "min": 50
+    },
+    {
+      "name": "ltu_steel_lod1",
+      "material": "ltu_mesh_steel",
+      "max": null,
+      "min": 50
+    },
+    {
+      "name": "ltu_white_lod1",
+      "material": "ltu_mesh_white",
+      "max": null,
+      "min": 50
+    }
+  ],
+  "col_surface": "ltu_mesh_v2_col",
+  "skinned": true,
+  "anim": {
+    "file": "ltu_mesh_v2_pump.anim",
+    "name": "running",
+    "loop": true
+  },
+  "extra_libraries": [],
+  "report": {
+    "pose": "bind = canisters at mid-stroke (0.13 m); clip strokes each 0..0.26 m",
+    "bounds": [
+      -1.05,
+      -0.98,
+      0.0,
+      1.05,
+      0.98,
+      2.5595,
+      0.0,
+      0.0,
+      1.2797,
+      1.8748
+    ],
+    "bones": [
+      {
+        "name": "ltu_root",
+        "bind_pos": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "ltu_can_a",
+        "bind_pos": [
+          -0.56,
+          0.0,
+          1.21
+        ]
+      },
+      {
+        "name": "ltu_can_b",
+        "bind_pos": [
+          0.56,
+          0.0,
+          1.21
+        ]
+      }
+    ],
+    "surfaces": [
+      {
+        "name": "ltu_chassis_lod0",
+        "tris": 2459,
+        "verts": 1602,
+        "attr_verts": 2377,
+        "bones": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "ltu_grey_lod0",
+        "tris": 1980,
+        "verts": 1220,
+        "attr_verts": 1724,
+        "bones": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "ltu_gunmetal_lod0",
+        "tris": 2146,
+        "verts": 1540,
+        "attr_verts": 2485,
+        "bones": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "ltu_orange_lod0",
+        "tris": 2955,
+        "verts": 1623,
+        "attr_verts": 2615,
+        "bones": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "ltu_redtag_lod0",
+        "tris": 264,
+        "verts": 160,
+        "attr_verts": 256,
+        "bones": [
+          0
+        ]
+      },
+      {
+        "name": "ltu_status_lod0",
+        "tris": 572,
+        "verts": 346,
+        "attr_verts": 570,
+        "bones": [
+          0
+        ]
+      },
+      {
+        "name": "ltu_steel_lod0",
+        "tris": 192,
+        "verts": 192,
+        "attr_verts": 208,
+        "bones": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "ltu_white_lod0",
+        "tris": 1378,
+        "verts": 785,
+        "attr_verts": 1257,
+        "bones": [
+          0
+        ]
+      },
+      {
+        "name": "ltu_chassis_lod1",
+        "tris": 1004,
+        "verts": 740,
+        "attr_verts": 1233,
+        "bones": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "ltu_grey_lod1",
+        "tris": 460,
+        "verts": 356,
+        "attr_verts": 598,
+        "bones": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "ltu_gunmetal_lod1",
+        "tris": 758,
+        "verts": 601,
+        "attr_verts": 1136,
+        "bones": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "ltu_orange_lod1",
+        "tris": 782,
+        "verts": 521,
+        "attr_verts": 935,
+        "bones": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "ltu_redtag_lod1",
+        "tris": 40,
+        "verts": 32,
+        "attr_verts": 80,
+        "bones": [
+          0
+        ]
+      },
+      {
+        "name": "ltu_status_lod1",
+        "tris": 100,
+        "verts": 78,
+        "attr_verts": 192,
+        "bones": [
+          0
+        ]
+      },
+      {
+        "name": "ltu_steel_lod1",
+        "tris": 60,
+        "verts": 60,
+        "attr_verts": 76,
+        "bones": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "ltu_white_lod1",
+        "tris": 377,
+        "verts": 296,
+        "attr_verts": 487,
+        "bones": [
+          0
+        ]
+      }
+    ],
+    "lod0_tris": 11946,
+    "lod1_tris": 3581,
+    "culling": {
+      "method": "ID render",
+      "views": 402,
+      "res": 1024,
+      "sweep_poses": 5,
+      "parts": {
+        "LTU_Body": {
+          "tris_before": 12564,
+          "tris_after": 7754
+        },
+        "LTU_Frame": {
+          "tris_before": 2180,
+          "tris_after": 1582
+        },
+        "LTU_CanA": {
+          "tris_before": 1668,
+          "tris_after": 1304
+        },
+        "LTU_CanB": {
+          "tris_before": 1668,
+          "tris_after": 1306
+        }
+      }
+    },
+    "col": {
+      "hull_tris": 536,
+      "tris": 120,
+      "bounds": [
+        -1.0495,
+        -0.9796,
+        0.0017,
+        1.0496,
+        0.9793,
+        2.5595,
+        0.0,
+        -0.0001,
+        1.2806,
+        1.8744
+      ]
+    },
+    "clip": {
+      "name": "ltu_pump",
+      "frames": 80,
+      "seconds_at_30fps": 2.667,
+      "rise_fraction": 0.42,
+      "hold_fraction": 0.08000000000000002,
+      "can_a_dz_range": [
+        -0.13,
+        0.13
+      ],
+      "can_b_dz_range": [
+        -0.13,
+        0.13
+      ],
+      "can_top_at_bind": {
+        "LTU_CanA": 2.18,
+        "LTU_CanB": 2.18
+      },
+      "tmin": [
+        -0.56,
+        0.0,
+        0.0
+      ],
+      "trange": [
+        1.12,
+        0.0,
+        1.34
+      ]
+    },
+    "bytes": {
+      "ltu_mesh_v2.mesh": 616821,
+      "ltu_mesh_v2_col.mesh": 7391,
+      "ltu_mesh_v2_pump.anim": 3880
+    },
+    "zero_area_tris_dropped": {}
+  }
+}

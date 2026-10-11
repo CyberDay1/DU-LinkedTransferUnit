@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Tests only the pure logic (route parsing, prefix match, quantity maths, panel config rules, store, item catalogue and filter): no NQ assemblies needed. -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>annotations</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\src\Routing.cs" Link="Routing.cs" />
+    <Compile Include="..\src\LtuConfig.cs" Link="LtuConfig.cs" />
+    <Compile Include="..\src\UnitSettings.cs" Link="UnitSettings.cs" />
+    <Compile Include="..\src\Pairing.cs" Link="Pairing.cs" />
+    <Compile Include="..\src\Catalog.cs" Link="Catalog.cs" />
+    <Compile Include="..\src\MoveSafety.cs" Link="MoveSafety.cs" />
+    <Compile Include="..\src\AssetPlan.cs" Link="AssetPlan.cs" />
+    <Compile Include="..\src\OutputMode.cs" Link="OutputMode.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+  </ItemGroup>
+</Project>

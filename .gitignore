@@ -1,0 +1,18 @@
+bin/
+obj/
+*.user
+.vs/
+.vscode/
+# NQ toolkit assemblies: copied locally from the mod toolkit, never committed (toolkit licence).
+lib/*.dll
+__pycache__/
+*.pyc
+node_modules/
+# Game and wiki reference images (Novaquark property): kept locally, never committed. See art/reference/SOURCES.txt.
+art/reference/**/*.png
+art/reference/**/*.jpg
+# Renders that show game icons or the stock model: kept locally, never committed.
+mockups/*.png
+art/renders/*compare_stock*.png
+assets/previews/kit_*.png
+assets/previews/*compare*.png

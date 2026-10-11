@@ -1,0 +1,12 @@
+LTU art references (read-only; nothing unpacked, no Dual.exe).
+The images themselves are Novaquark property and are not in this repository
+(gitignored); this file says where each one comes from.
+- icons/ and stock_*_icon_x4.png: loose element icons copied from
+  C:\ProgramData\My Dual Universe\Game\data\resources_generated\elements\{industries,containers}\*\icons\ (128 px; x4 = upscale).
+- stock_industry_icons_board.png: board of the 11 stock industry icons.
+- Stock TU colour/emission textures (not copied, read in place):
+  resources_generated\elements\industries\industry-transfer-unit_001\textures\env_industry-transfer-unit_001_t_01_{c,e}.dds
+- web/wiki_Factory.jpg: https://static.wikia.nocookie.net/dualuniverse_gamepedia/images/d/d7/Factory.jpg (Novaquark concept art, 2016)
+- web/wiki_IndustrialUnitAssembler.jpg: https://static.wikia.nocookie.net/dualuniverse_gamepedia/images/d/d5/IndustrialUnitAssembler.jpg (concept art, 2017)
+- web/wiki_Ind01.png: https://static.wikia.nocookie.net/dualuniverse_gamepedia/images/9/90/Ind01.png
+  (fandom wiki pages sit behind Cloudflare; files fetched via the MediaWiki API, dualuniverse.fandom.com/api.php)

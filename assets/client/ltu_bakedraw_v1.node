@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.3">
+	<materials>
+		<library>resources_generated/elements/industries/industry-transfer-unit_001/env_industry-transfer-unit_001.mat</library>
+		<library>resources_generated/gameplay/tools/contactsurface/contact_surface.mat</library>
+		<library>resources_generated/vfx/global/materials/vfx_refraction_001.mat</library>
+		<library>resources_generated/vfx/global/materials/vfx_dust-air_001.mat</library>
+		<library>resources_generated/vfx/global/materials/vfx_dust-helicopter_001.mat</library>
+		<library>resources_generated/vfx/global/materials/vfx_smoke-gray_001.mat</library>
+		<library>resources_generated/vfx/global/materials/vfx_sparks-up_001.mat</library>
+		<library>resources_generated/ltu_bakedraw_v1.mat</library>
+	</materials>
+	<node type="ObjectMeshSkinned" id="149341665" name="ltu_baked_body">
+		<mesh_name>resources_generated/ltu_bakedraw_v1.mesh</mesh_name>
+		<surface name="ltu_baked_lod0" max_visible_distance="50" material="ltu_baked_body" property="surface_base"/>
+		<surface name="ltu_baked_lod1" min_visible_distance="50" material="ltu_baked_body" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+		<node type="NodeDummy" id="211440232" name="contact_surfaces3">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			<node type="NodeReference" id="127272108" name="contact1">
+				<reference>resources_generated/gameplay/tools/contactsurface/nodes/contact_surface_base_03.node</reference>
+				<transform>0.999999940395 0 0 0.0 0 -0.999999940395 -8.7422760468e-008 0.0 0 8.7422760468e-008 -1 0.0 0 0 4.59177508159e-041 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="32310272" name="col_mesh">
+			<mesh_name>resources_generated/ltu_bakedraw_v1_col.mesh</mesh_name>
+			<surface name="ltu_baked_v1_col" enabled="0" material="cm_01" property="surface_base"/>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="224499848" enabled="0" folded="1" name="vfx_on">
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			<node type="ObjectParticles" id="215309233" collider="0" folded="1" name="refraction-left">
+				<spawn_rate>5</spawn_rate>
+				<emitter_type>3</emitter_type>
+				<emitter_enabled>1</emitter_enabled>
+				<emitter_limit>500</emitter_limit>
+				<emitter_size>0.5 1 0.2</emitter_size>
+				<emitter_direction>0 0 2</emitter_direction>
+				<life_mean>3</life_mean>
+				<life_spread>0.2</life_spread>
+				<velocity_mean>0.2</velocity_mean>
+				<velocity_spread>0</velocity_spread>
+				<radius_mean>0.35</radius_mean>
+				<radius_spread>0</radius_spread>
+				<growth_mean>0.05</growth_mean>
+				<growth_spread>0.05</growth_spread>
+				<surface name="particles" material="vfx_refraction_001" property="surface_base"/>
+				<transform>0.999424934182 -1.54882977168e-006 0 0.0 1.54878237492e-006 0.999394356988 0 0.0 0 0 0.999813616265 0.0 0.00779510104153 -0.549585193766 1.64844509409 1.0</transform>
+			</node>
+			<node type="ObjectParticles" id="70031243" collider="0" folded="1" name="dust-floor_1">
+				<variation_x>1</variation_x>
+				<variation_y>1</variation_y>
+				<spawn_rate>50</spawn_rate>
+				<length_stretch>0.01</length_stretch>
+				<linear_damping>2.254</linear_damping>
+				<growth_damping>1</growth_damping>
+				<emitter_type>3</emitter_type>
+				<emitter_enabled>1</emitter_enabled>
+				<emitter_sequence>15</emitter_sequence>
+				<emitter_size>1.5 3.8 1</emitter_size>
+				<life_mean>2</life_mean>
+				<life_spread>0.2</life_spread>
+				<velocity_mean>2</velocity_mean>
+				<velocity_spread>1</velocity_spread>
+				<angle_mean>0</angle_mean>
+				<angle_spread>0</angle_spread>
+				<radius_mean>0.02</radius_mean>
+				<radius_spread>0.005</radius_spread>
+				<gravity>0 0 1</gravity>
+				<force>
+					<enabled>1</enabled>
+					<attached>1</attached>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4.13590404884e-025 -1.8310544192e-009 1.2599350214 1.0</transform>
+					<radius>3</radius>
+					<attenuation>10</attenuation>
+					<attractor>0</attractor>
+					<rotator>345.2</rotator>
+				</force>
+				<surface name="particles" material="vfx_dust-air_001" property="surface_base"/>
+				<transform>5.96046447754e-008 -0.999999940395 0 0.0 0.999999940395 5.96046447754e-008 0 0.0 0 0 0.99999922514 0.0 -0.100499017717 -5.99020860834e-009 0 1.0</transform>
+			</node>
+			<node type="ObjectParticles" id="154068352" collider="0" name="dust-floor_0">
+				<particles_type>2</particles_type>
+				<depth_sort>1</depth_sort>
+				<variation_x>1</variation_x>
+				<spawn_rate>10</spawn_rate>
+				<length_stretch>0.01</length_stretch>
+				<linear_damping>10</linear_damping>
+				<growth_damping>1</growth_damping>
+				<emitter_enabled>1</emitter_enabled>
+				<emitter_sequence>15</emitter_sequence>
+				<emitter_size>4 0 0</emitter_size>
+				<emitter_spread>1 1 0</emitter_spread>
+				<life_mean>3</life_mean>
+				<life_spread>1</life_spread>
+				<velocity_mean>20</velocity_mean>
+				<velocity_spread>6</velocity_spread>
+				<angle_mean>0</angle_mean>
+				<angle_spread>0</angle_spread>
+				<radius_mean>0.02</radius_mean>
+				<radius_spread>0.01</radius_spread>
+				<growth_mean>2</growth_mean>
+				<growth_spread>0.33</growth_spread>
+				<gravity>0 0 1</gravity>
+				<force>
+					<enabled>1</enabled>
+					<attached>1</attached>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 6.98492041984e-010 0 1.0</transform>
+					<radius>5</radius>
+					<attenuation>10</attenuation>
+					<attractor>7.6</attractor>
+					<rotator>0</rotator>
+				</force>
+				<surface name="particles" material="vfx_dust-helicopter_001" property="surface_base"/>
+				<transform>0.999999225139 -1.19209222049e-007 0 0.0 1.19209222049e-007 0.999999225139 0 0.0 0 0 0.99999922514 0.0 0 0 0 1.0</transform>
+			</node>
+			<node type="ObjectParticles" id="26897316" collider="0" folded="1" name="refraction-left_2">
+				<spawn_rate>5</spawn_rate>
+				<emitter_type>3</emitter_type>
+				<emitter_enabled>1</emitter_enabled>
+				<emitter_limit>500</emitter_limit>
+				<emitter_size>0.5 1 0.2</emitter_size>
+				<emitter_direction>0 0 2</emitter_direction>
+				<life_mean>3</life_mean>
+				<life_spread>0.2</life_spread>
+				<velocity_mean>0.2</velocity_mean>
+				<velocity_spread>0</velocity_spread>
+				<radius_mean>0.35</radius_mean>
+				<radius_spread>0</radius_spread>
+				<growth_mean>0.05</growth_mean>
+				<growth_spread>0.05</growth_spread>
+				<surface name="particles" material="vfx_refraction_001" property="surface_base"/>
+				<transform>0.999397039198 -1.72749266589e-006 0 0.0 1.72742899413e-006 0.999360203514 0 0.0 0 0 0.99980419873 0.0 0.00779486525504 0.769028274478 1.64844509409 1.0</transform>
+			</node>
+		</node>
+		<node type="NodeDummy" id="168383420" folded="1" name="vfx_jam">
+			<transform>1.00000011921 1.19209303762e-007 0 0.0 -1.19209303762e-007 1.00000011921 0 0.0 0 0 0.999999940395 0.0 -1.05879131029e-022 0 0 1.0</transform>
+			<node type="ObjectParticles" id="38513459" collider="0" name="smoke-left">
+				<particles_type>2</particles_type>
+				<warming>0</warming>
+				<variation_x>1</variation_x>
+				<variation_y>1</variation_y>
+				<culling>1</culling>
+				<spawn_rate>5</spawn_rate>
+				<physical_mass>5</physical_mass>
+				<linear_damping>0.7</linear_damping>
+				<angular_damping>0.5</angular_damping>
+				<growth_damping>0.15</growth_damping>
+				<emitter_enabled>1</emitter_enabled>
+				<emitter_spread>0.05 0.05 0.05</emitter_spread>
+				<life_mean>3</life_mean>
+				<life_spread>0.5</life_spread>
+				<velocity_mean>0.1</velocity_mean>
+				<velocity_spread>0.3</velocity_spread>
+				<angle_mean>0</angle_mean>
+				<angle_spread>10</angle_spread>
+				<rotation_mean>0</rotation_mean>
+				<rotation_spread>10</rotation_spread>
+				<radius_mean>0.3</radius_mean>
+				<radius_spread>0.05</radius_spread>
+				<growth_mean>0.05</growth_mean>
+				<growth_spread>0.01</growth_spread>
+				<gravity>0 0 0.6</gravity>
+				<surface name="particles" viewport_mask="0x3" material="vfx_smoke-gray_001" property="surface_base"/>
+				<transform>0.928209543228 8.48727665925e-009 -0.370458617265 0.0 8.49129833114e-009 0.999876141548 4.41828777388e-008 0.0 0.37042671442 -4.4158309007e-008 0.92812984325 0.0 0.710082000008 0.0151079153135 1.54069217977 1.0</transform>
+				<node type="ObjectParticles" id="130375830" collider="0" name="spark-up_001_1">
+					<particles_type>3</particles_type>
+					<texture_atlas>1</texture_atlas>
+					<spawn_rate>100</spawn_rate>
+					<length_stretch>0.04</length_stretch>
+					<linear_damping>4</linear_damping>
+					<emitter_type>1</emitter_type>
+					<emitter_enabled>1</emitter_enabled>
+					<emitter_size>0.25 0.2 0</emitter_size>
+					<emitter_direction>0 0 1</emitter_direction>
+					<emitter_spread>0.2 0.2 0</emitter_spread>
+					<period_mean>0.4</period_mean>
+					<period_spread>0.4</period_spread>
+					<duration_mean>0.4</duration_mean>
+					<duration_spread>0.4</duration_spread>
+					<life_mean>0.5</life_mean>
+					<life_spread>1</life_spread>
+					<velocity_mean>1</velocity_mean>
+					<velocity_spread>2</velocity_spread>
+					<radius_mean>0.01</radius_mean>
+					<radius_spread>0.004</radius_spread>
+					<gravity>0 0 3</gravity>
+					<noise>
+						<enabled>1</enabled>
+						<attached>1</attached>
+						<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+						<offset>0 0 0</offset>
+						<step>1 1 1</step>
+						<force>500000</force>
+						<scale>0.5</scale>
+						<frequency>4</frequency>
+						<size>16</size>
+					</noise>
+					<surface name="particles" material="vfx_spark-up_001" property="surface_base"/>
+					<transform>1.00000882463 0 0 0.0 2.2108591501e-075 1.00000047687 1.67047794381e-052 0.0 1.32348898008e-023 -7.00694045996e-046 1.00000930117 0.0 1.11022302463e-016 0 2.22044604925e-016 1.0</transform>
+				</node>
+				<node type="ObjectParticles" id="11076740" collider="0" folded="1" name="refraction-left_3">
+					<spawn_rate>5</spawn_rate>
+					<emitter_type>3</emitter_type>
+					<emitter_enabled>1</emitter_enabled>
+					<emitter_limit>500</emitter_limit>
+					<emitter_size>0 0 0.2</emitter_size>
+					<emitter_direction>0 0 2</emitter_direction>
+					<emitter_spread>0.2 0.2 0.2</emitter_spread>
+					<life_mean>5.5</life_mean>
+					<life_spread>0.2</life_spread>
+					<velocity_mean>0.2</velocity_mean>
+					<velocity_spread>0</velocity_spread>
+					<radius_mean>0.2</radius_mean>
+					<radius_spread>0.01</radius_spread>
+					<growth_mean>0.01</growth_mean>
+					<growth_spread>0.001</growth_spread>
+					<surface name="particles" material="vfx_refraction_001" property="surface_base"/>
+					<transform>8.94083450132e-007 0.999544623961 0 0.0 -0.99998204834 8.93632928864e-007 0 0.0 0 0 1.0004633705 0.0 0.0012907665839 -0.0312458532225 -0.160623690388 1.0</transform>
+				</node>
+			</node>
+			<node type="ObjectParticles" id="233850021" collider="0" name="smoke-right">
+				<particles_type>2</particles_type>
+				<warming>0</warming>
+				<variation_x>1</variation_x>
+				<variation_y>1</variation_y>
+				<culling>1</culling>
+				<spawn_rate>5</spawn_rate>
+				<physical_mass>5</physical_mass>
+				<linear_damping>0.7</linear_damping>
+				<angular_damping>0.5</angular_damping>
+				<growth_damping>0.15</growth_damping>
+				<emitter_enabled>1</emitter_enabled>
+				<emitter_spread>0.05 0.05 0.05</emitter_spread>
+				<life_mean>3</life_mean>
+				<life_spread>0.5</life_spread>
+				<velocity_mean>0.1</velocity_mean>
+				<velocity_spread>0.3</velocity_spread>
+				<angle_mean>0</angle_mean>
+				<angle_spread>10</angle_spread>
+				<rotation_mean>0</rotation_mean>
+				<rotation_spread>10</rotation_spread>
+				<radius_mean>0.3</radius_mean>
+				<radius_spread>0.05</radius_spread>
+				<growth_mean>0.05</growth_mean>
+				<growth_spread>0.01</growth_spread>
+				<gravity>0 0 0.6</gravity>
+				<surface name="particles" viewport_mask="0x3" material="vfx_smoke-gray_001" property="surface_base"/>
+				<transform>-0.717587292194 -1.2096527513e-007 -0.695608818008 0.0 2.91519839379e-008 -0.999859511852 1.43800977615e-007 0.0 -0.695488631725 8.29087269785e-008 0.717463578875 0.0 -0.72312000227 -0.0343569137107 1.63701719101 1.0</transform>
+				<node type="ObjectParticles" id="87761956" collider="0" name="spark-up_001_1">
+					<particles_type>3</particles_type>
+					<texture_atlas>1</texture_atlas>
+					<spawn_rate>100</spawn_rate>
+					<length_stretch>0.04</length_stretch>
+					<linear_damping>4</linear_damping>
+					<emitter_type>1</emitter_type>
+					<emitter_enabled>1</emitter_enabled>
+					<emitter_size>0.25 0.2 0</emitter_size>
+					<emitter_direction>0 0 1</emitter_direction>
+					<emitter_spread>0.2 0.2 0</emitter_spread>
+					<period_mean>0.4</period_mean>
+					<period_spread>0.4</period_spread>
+					<duration_mean>0.4</duration_mean>
+					<duration_spread>0.4</duration_spread>
+					<life_mean>0.5</life_mean>
+					<life_spread>1</life_spread>
+					<velocity_mean>1</velocity_mean>
+					<velocity_spread>2</velocity_spread>
+					<radius_mean>0.01</radius_mean>
+					<radius_spread>0.004</radius_spread>
+					<gravity>0 0 3</gravity>
+					<noise>
+						<enabled>1</enabled>
+						<attached>1</attached>
+						<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+						<offset>0 0 0</offset>
+						<step>1 1 1</step>
+						<force>500000</force>
+						<scale>0.5</scale>
+						<frequency>4</frequency>
+						<size>16</size>
+					</noise>
+					<surface name="particles" material="vfx_spark-up_001" property="surface_base"/>
+					<transform>1.00000882463 0 0 0.0 2.2108591501e-075 1.00000047687 1.67047794381e-052 0.0 1.32348898008e-023 -7.00694045996e-046 1.00000930117 0.0 1.11022302463e-016 0 2.22044604925e-016 1.0</transform>
+				</node>
+				<node type="ObjectParticles" id="122409608" collider="0" folded="1" name="refraction-left_3">
+					<spawn_rate>5</spawn_rate>
+					<emitter_type>3</emitter_type>
+					<emitter_enabled>1</emitter_enabled>
+					<emitter_limit>500</emitter_limit>
+					<emitter_size>0 0 0.2</emitter_size>
+					<emitter_direction>0 0 2</emitter_direction>
+					<emitter_spread>0.2 0.2 0.2</emitter_spread>
+					<life_mean>5.5</life_mean>
+					<life_spread>0.2</life_spread>
+					<velocity_mean>0.2</velocity_mean>
+					<velocity_spread>0</velocity_spread>
+					<radius_mean>0.2</radius_mean>
+					<radius_spread>0.01</radius_spread>
+					<growth_mean>0.01</growth_mean>
+					<growth_spread>0.001</growth_spread>
+					<surface name="particles" material="vfx_refraction_001" property="surface_base"/>
+					<transform>8.94083450132e-007 0.999544623961 0 0.0 -0.99998204834 8.93632928864e-007 0 0.0 0 0 1.0004633705 0.0 0.0012907665839 -0.0312458532225 -0.160623690388 1.0</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+</nodes>

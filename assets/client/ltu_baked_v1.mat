@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<materials version="2.3">
+	<material name="ltu_baked_body" parent="env_core-round-side-industry_001_01">
+		<texture name="albedo">resources_generated/ltu_baked_v1_c.dds</texture>
+		<texture name="normal">resources_generated/ltu_baked_v1_n.dds</texture>
+		<texture name="shading">resources_generated/ltu_baked_v1_mrao.dds</texture>
+		<texture name="emission">resources_generated/ltu_baked_v1_e.dds</texture>
+	</material>
+</materials>
