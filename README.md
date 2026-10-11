@@ -27,3 +27,8 @@ The NQ toolkit assemblies are not included (toolkit licence); copy them into
 
 `GUIDE.md` covers use, configuration, client art, building, item safety and
 known limits.
+
+## Licence
+
+MIT, see `LICENSE`. The NQ toolkit assemblies the build needs are not covered
+and not included.
